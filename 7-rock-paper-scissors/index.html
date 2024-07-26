@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock | Paper | Scissor</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="h-screen flex items-center justify-center">
+        <div class="container | flex items-center justify-around flex-col w-full h-1/2">
+            <div class="heading | text-4xl font-bold">Rock Paper Scissors Game</div>
+
+            <div class="sub-heading | text-3xl font-semibold">Choose your move:</div>
+
+            <div class="options | flex items-center justify-evenly w-1/3">
+                <div class="rock | cursor-pointer p-3 text-5xl rounded-md bg-red-500 hover:bg-red-400 transition-all">👊</div> 
+                <div class="paper | cursor-pointer p-3 text-5xl rounded-md bg-blue-500  hover:bg-blue-400 transition-all">🖐</div>
+                <div class="scissor | cursor-pointer p-3 text-5xl rounded-md bg-green-500  hover:bg-green-400 transition-all">✌</div>
+            </div>
+
+            <div class="output | text-2xl font-semibold">
+                Start 
+            </div>
+
+            <div class="scores | text-2xl font-semibold">
+                Your score: <span class="userWinCount | text-blue-600">0</span> Computer score: <span class="computerWinCount | text-red-600">0</span>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
