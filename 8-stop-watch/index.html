@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- <style>
+    * {
+        border: 1px solid red;
+    }
+</style> -->
+<body class="h-full flex items-center justify-center">
+
+    <div class="container | w-full h-1/2 flex items-center justify-around flex-col">
+        <div class="timer | text-red-400 font-extrabold text-8xl text-center">
+            <span class="hours">00</span>: <span class="minutes">00</span> : <span class="seconds">00</span> . <span class="miliSeconds">00</span>
+        </div>
+
+        <div class="btns flex | items-center justify-evenly w-1/2">
+            <button class="btn start | text-5xl text-white font-bold bg-red-600 rounded-3xl px-5 py-3 cursor-pointer hover:bg-red-500 hover:shadow-xl  transition-all"> Start </button>
+            <button class="btn stop  | text-5xl text-white font-bold bg-red-600 rounded-3xl px-5 py-3 cursor-pointer hover:bg-red-500 hover:shadow-xl transition-all"> Stop </button>
+            <button class="btn reset | text-5xl text-white font-bold bg-red-600 rounded-3xl px-5 py-3 cursor-pointer hover:bg-red-500 hover:shadow-xl  transition-all"> Reset </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
