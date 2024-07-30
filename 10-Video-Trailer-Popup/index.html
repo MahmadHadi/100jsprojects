@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video Trailer Popup</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
+    <body
+        class="relative w-full h-full flex items-center justify-center bg-black text-white"
+    >
+        <div
+            class="container | flex justify-center flex-col"
+            style="width: 50%"
+        >
+            <div class="img | my-3 w-full rounded-md">
+                <img
+                    class="rounded-md"
+                    src="https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt=""
+                />
+            </div>
+            <div class="title | my-3 text-4xl">Movie Title</div>
+            <div class="desc ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                iste necessitatibus porro explicabo illo dolorum dolores
+                cupiditate non modi quasi nobis, earum ab, autem esse vero
+                sapiente minus vel! Provident?
+            </div>
+            <div class="btn | px-3 py-2 rounded-md my-3 bg-white hover:bg-orange-400 cursor-pointer text-black w-2/12">
+                Watch now
+            </div>
+
+            <div class="video | flex gap-4 absolute w-[70%] h-[70%] top-[15%] left-[15%] opacity-0 pointer-events-none " style="transition: all .5s ease;">
+                <video controls muted>
+                    <source src="https://demo.100jsprojects.com/video-trailer-popup/trailer.mp4">
+                </video>
+                <div class="close | w-[5%] cursor-pointer">
+                    <img src="./img/close.svg" alt="" class="invert">
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
