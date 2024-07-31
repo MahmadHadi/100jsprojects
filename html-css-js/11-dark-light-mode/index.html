@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full w-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dark Light Mode Toggler | 100jsprojects</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <style>
+        * {
+            /* border: 1px solid red; */
+        }
+        body,
+        .circle {
+            transition: all .3s linear;
+        }
+        
+    </style>
+    <body class="h-full w-full flex flex-col items-center justify-center gap-10">
+        <h1 id="headingText" class="text-5xl font-bold">Light Mode </h1>
+        <div
+        class="container | relative p-1 bg-slate-200 h-10 w-20 rounded-full cursor-pointer"
+        >
+            <div class="circle | absolute h-8 w-8 rounded-full bg-white "></div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
