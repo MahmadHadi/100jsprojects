@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Heart Trail Animation | 100jsprojects</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <style>
+        .circle {
+            height: 30px;
+            width: 30px;
+            background: #fff;
+            border-radius: 100%;
+            position: absolute;
+            border: 1px solid red;
+            animation: 
+                move-upside 3s linear forwards,
+                move-scal .3s linear(0 0%, 1.23 45.82%, 1 100%) forwards;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes move-upside {
+            to {
+                top: -100%;
+            }
+        }
+
+        @keyframes move-scal {
+            from {
+                scale: 0;
+            }
+            to {
+                scale: 1;
+            }
+        }
+    </style>
+
+    <body class="bg-black h-screen w-screen">
+        <div class="circle"></div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
